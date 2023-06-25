@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "author", schema = "public")
+@Table(name = "book", schema = "public")
 public class Book implements Serializable {
 
     @Serial
@@ -43,4 +43,8 @@ public class Book implements Serializable {
 
     @Column(name = "price")
     private BigDecimal price;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "author_id", referencedColumnName = "id")
+    private Author author;
 }
