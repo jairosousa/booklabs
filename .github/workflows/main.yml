@@ -43,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: prod
-      url: "jnsdev.com"
+      url: "http://jnsdev.com"
     needs: build
     steps:
       - name: Run a one-line script
