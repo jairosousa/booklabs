@@ -1,6 +1,8 @@
 package com.jnsdev.booklabs.service;
 
+import com.jnsdev.booklabs.entities.Author;
 import com.jnsdev.booklabs.entities.Book;
+import com.jnsdev.booklabs.repository.AuthorRepository;
 import com.jnsdev.booklabs.repository.BookRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -22,9 +24,11 @@ import java.util.List;
 public class BookServiceImpl implements BookService {
 
     private final BookRepository repository;
+    private final AuthorRepository authorRepository;
 
-    public BookServiceImpl(BookRepository repository) {
+    public BookServiceImpl(BookRepository repository, AuthorRepository authorRepository) {
         this.repository = repository;
+        this.authorRepository = authorRepository;
     }
 
     @Override
