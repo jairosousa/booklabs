@@ -1,4 +1,5 @@
-# booklabs
+# booklabs ![GitHub repo size](https://img.shields.io/github/repo-size/jairosousa/booklabs)
+
 Spring Boot 3.0 API deployment using Jenkins pipeline and Docker
 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
@@ -7,7 +8,6 @@ Spring Boot 3.0 API deployment using Jenkins pipeline and Docker
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![GitHub repo size](https://img.shields.io/github/repo-size/jairosousa/booklabs)
 
 
 ## Enviroment
