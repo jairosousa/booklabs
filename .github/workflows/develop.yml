@@ -53,7 +53,7 @@ jobs:
     environment:
       name: hom
       url: "http://jnsdev.com"
-    needs: deploy-hom
+    needs: deploy-dev
     steps:
       - name: Run a one-line script
         run: echo Deploy em hom.
