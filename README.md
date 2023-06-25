@@ -15,7 +15,7 @@ dev - ![GitHub Workflow Status (with event)](https://img.shields.io/github/actio
 
 hom - ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/jairosousa/booklabs/develop.yml?event=push&logo=github&link=dev)
 
-prd - ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/jairosousa/booklabs/main.yml?event=push&logo=github&link=dev)
+prod - ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/jairosousa/booklabs/main.yml?logo=github)
 
 
 [booklabs - Spring initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.1.1&packaging=jar&jvmVersion=17&groupId=com.jnsdev&artifactId=booklabs&name=booklabs&description=Spring%20Boot%203.0%20API%20deployment%20using%20Jenkins%20pipeline%20and%20Docker&packageName=com.jnsdev.booklabs&dependencies=web,data-jpa,validation,postgresql,lombok,devtools)
