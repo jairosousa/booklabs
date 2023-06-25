@@ -6,11 +6,12 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Maven - Branches
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - 'feature/**'
 jobs:
   build:
     runs-on: ubuntu-latest
