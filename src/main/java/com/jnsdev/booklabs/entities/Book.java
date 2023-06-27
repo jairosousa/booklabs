@@ -44,7 +44,7 @@ public class Book implements Serializable {
     @Column(name = "price")
     private BigDecimal price;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "author_id", referencedColumnName = "id")
+    @ManyToOne
+    @JoinColumn(name = "author_id")
     private Author author;
 }
