@@ -60,7 +60,7 @@ jobs:
     steps:
       - name: Push to Docker Hub Container Registry
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/booklabs-act:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/booklabs:latest
 #          docker tag ${{ secrets.DOCKER_USERNAME }}/booklabs:latest ${{ secrets.DOCKER_USERNAME }}/booklabs:${{ github.run_id }}
 
       - name: Run a one-line script
