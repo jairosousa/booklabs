@@ -47,6 +47,10 @@ jobs:
       working-directory: .
       run: mvn clean package
 
+    - name: Docker Compose Build
+      working-directory: .
+      run: docker compose build
+
   deploy-prod:
     runs-on: ubuntu-latest
     environment:
@@ -54,13 +58,10 @@ jobs:
       url: "http://jnsdev.com"
     needs: build
     steps:
-      - name: Docker Compose Build
-        working-directory: .
-        run: docker compose build
-
       - name: Push to Docker Hub Container Registry
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/booklabs-act:latest
 #          docker tag ${{ secrets.DOCKER_USERNAME }}/booklabs:latest ${{ secrets.DOCKER_USERNAME }}/booklabs:${{ github.run_id }}
+
       - name: Run a one-line script
         run: echo Deploy em prod.

@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Java CI with Maven
+name: Continuos Integrations with GitHub Action - Develop
 
 on:
   pull_request:
@@ -36,6 +36,9 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
         cache: maven
+
+    - name: Build with Maven
+      run: mvn clean package
 
     - name: Docker Compose Build
       working-directory: .
