@@ -17,7 +17,8 @@ hom - ![GitHub Workflow Status (with event)](https://img.shields.io/github/actio
 
 prod - ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/jairosousa/booklabs/main.yml?logo=github)
 
-Docker repository - [![Docker Hub Repo](https://img.shields.io/docker/pulls/jnsousa/booklabs.svg)](https://hub.docker.com/repository/docker/jnsousa/booklabs)
+Docker Hub Repo - [![Docker Pulls](https://img.shields.io/docker/pulls/jnsousa/booklabs)]([https://hub.docker.com/repository/docker/jnsousa/booklabs](https://hub.docker.com/r/jnsousa/booklabs))
+![Docker Image Size with architecture (latest by date/latest semver)](https://img.shields.io/docker/image-size/jnsousa/booklabs)
 
 [booklabs - Spring initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.1.1&packaging=jar&jvmVersion=17&groupId=com.jnsdev&artifactId=booklabs&name=booklabs&description=Spring%20Boot%203.0%20API%20deployment%20using%20Jenkins%20pipeline%20and%20Docker&packageName=com.jnsdev.booklabs&dependencies=web,data-jpa,validation,postgresql,lombok,devtools)
 
